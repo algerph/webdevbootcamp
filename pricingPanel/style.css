@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  font-weight: bold;
+}
+
+:root {
+  --color-little-princess: #e9dce5;
+  --color-sunset-purple: #a865b5;
+  --color-luxury-purple: #743089;
+  --color-matte-purple: #392a48;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-sunset-purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.panel {
+  background-color: var(--color-little-princess);
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-plan {
+  border-bottom: 1px solid #fff;
+}
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+.pricing-img {
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+
+.pricing-header {
+  color: var(--color-matte-purple);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pricing-features {
+  margin: 50px 0 25px;
+  color: var(--color-luxury-purple);
+}
+.pricing-features-item {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+  border-top: 1px solid var(--color-luxury-purple);
+}
+.pricing-features-item:last-child {
+  border-bottom: 1px solid var(--color-luxury-purple);
+}
+
+.pricing-price {
+  color: var(--color-luxury-purple);
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pricing-button {
+  border: 1px solid var(--color-sunset-purple);
+  border-radius: 10px;
+  color: var(--color-luxury-purple);
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px 0;
+  transition: all 200ms ease-in-out;
+}
+.pricing-button:hover, .pricing-button:focus {
+  background-color: var(--color-luxury-purple);
+  color: var(--color-little-princess);
+  border: 1px solid var(--color-luxury-purple);
+}
+.pricing-button.is-featured {
+  background-color: var(--color-luxury-purple);
+  color: var(--color-little-princess);
+  border: 1px solid var(--color-luxury-purple);
+}
+.pricing-button.is-featured:hover, .pricing-button.is-featured:focus {
+  background-color: #7d3393;
+  color: var(--color-little-princess);
+  border: 1px solid #7d3393;
+}
+
+@media (min-width: 900px) {
+  .panel {
+    flex-direction: row;
+  }
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid var(--color-sunset-purple);
+    padding: 25px 50px;
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}/*# sourceMappingURL=style.css.map */
